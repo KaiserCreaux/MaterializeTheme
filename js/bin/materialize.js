@@ -1878,7 +1878,7 @@ $(document).ready(function(){
             }
           }
 
-        // Window resize to reset on large screens fixed
+        /* Window resize to reset on large screens fixed
         if (menu_id.hasClass('fixed')) {
           $(window).resize( function() {
             if (window.innerWidth > 992) {
@@ -1899,7 +1899,7 @@ $(document).ready(function(){
             }
 
           });
-        }
+        }*/
 
         // if closeOnClick, then add close event for all a tags in side sideNav
         if (options.closeOnClick == true) {
@@ -1973,14 +1973,14 @@ $(document).ready(function(){
             var y = e.gesture.center.y;
             var velocityX = e.gesture.velocityX;
 
-            // If overlay does not exist, create one and if it is clicked, close menu
+            /* If overlay does not exist, create one and if it is clicked, close menu
             if ($('#sidenav-overlay').length === 0) {
               var overlay = $('<div id="sidenav-overlay"></div>');
               overlay.css('opacity', 0).click( function(){
                 removeMenu();
               });
               $('body').append(overlay);
-            }
+            }*/
 
             // Keep within boundaries
             if (options.edge === 'left') {
@@ -2016,7 +2016,7 @@ $(document).ready(function(){
 
 
 
-            // Percentage overlay
+            /* Percentage overlay
             if (options.edge === 'left') {
               var overlayPerc = x / options.menuWidth;
               $('#sidenav-overlay').velocity({opacity: overlayPerc }, {duration: 50, queue: false, easing: 'easeOutQuad'});
@@ -2024,7 +2024,7 @@ $(document).ready(function(){
             else {
               var overlayPerc = Math.abs((x - $(window).width()) / options.menuWidth);
               $('#sidenav-overlay').velocity({opacity: overlayPerc }, {duration: 50, queue: false, easing: 'easeOutQuad'});
-            }
+            }*/
           }
 
         }).bind('panend', function(e) {
@@ -2097,7 +2097,7 @@ $(document).ready(function(){
 
               });
               $('body').append(overlay);
-              overlay.velocity({opacity: 1}, {duration: 300, queue: false, easing: 'easeOutQuad',
+              overlay.velocity({opacity: .2}, {duration: 300, queue: false, easing: 'easeOutQuad',
                 complete: function () {
                   menuOut = true;
                   panning = false;

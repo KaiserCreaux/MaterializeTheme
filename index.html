@@ -1,17 +1,1191 @@
 <!DOCTYPE html>
-  <html>
-    <head>
-      <!--Import materialize.css-->
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
-      <!--Let browser know website is optimized for mobile-->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    </head>
+<!-- ffa75e orange
+b7ff5e spring green
+92d690 mint green
+708c7f jungle green
+-->
 
-    <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-    </body>
-  </html>
-        
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="sass/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="sass/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+
+<body>
+	<div class="container">
+		<ul class="breadcrumb">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Bnos Menachem</a></li>
+			<li><a href="#">Registration</a></li>
+		</ul>
+		<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a>
+	</div>
+	<ul id="nav-mobile" class="side-nav" style="width: 240px;">
+		<li>
+			<ul><!-- Menubar Top, consistent between pages. -->
+				<li><a id="logo-container" href="http://materializecss.com/" class="brand-logo">CleverBees</a></li>
+				<li id="menuHives" class=""><a href="about.html" class="waves-effect waves-teal">Your Hives</a></li>
+				<li id="menuMessage" class=""><a href="getting-started.html" class="waves-effect waves-teal">Message</a></li>
+				<li id="menuAdmin" class=""><a href="getting-started.html" class="waves-effect waves-teal">Admin</a></li>
+			</ul>
+			<ul id="menuHolder"><!--Menubar middle, specific to location in site -->
+				<li><a class="waves-effect waves-teal">Buzz</a></li>
+				<li><a class="waves-effect waves-teal">Bees</a></li>
+				<li><a class="waves-effect waves-teal">Grades</a></li>
+			</ul>
+		</li>
+	</ul>
+
+
+	<div class="container content">
+		<div class="row">
+			<!--All sidebar content in the following div -->
+			<div class="col s12 m12 l5 sideBar">
+				<div class="col-sm-4 col-md-3 sidebar sidebar-offcanvas" id="sidebar">
+        <div>
+            <h1 id="logo">
+                <a href="/"><img src="logo.png" alt="Bnos Menachem" title="Bnos Menachem"></a>
+            </h1>
+        </div>
+        <!--
+        <div class="clearfix">
+            <button type="button" class="pull-right btn btn-large btn-success" data-bind="click: save, css: { disabled: $root.isInCallback }">Save</button>
+        </div>
+        -->
+        <div style="margin-top: 20px;">
+            <p>
+                <strong>Printable Forms</strong><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    <a title="Parent Contract" href="http://cb.library.s3.amazonaws.com/n2hmaZH2Q3aza3z8tdjQ_TzniusForm.pdf" target="_blank">Parent Contract</a>
+                </span><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    <a title="School Meals Form" href="http://cb.library.s3.amazonaws.com/2015-2016NotAvailable.pdf" target="_blank">School Meals Form</a>
+                </span><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    <a title="Medical Form" href="http://cb.library.s3.amazonaws.com/wJ3A6nIxRVqJXVOBvaxn_2014-2015%20Medical%20Form.pdf" target="_blank">Medical Form</a>
+                </span><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    <a title="NYS Texbook, Software and Library Law" href="http://cb.library.s3.amazonaws.com/2015-2016%20NYSTL.pdf" target="_blank">NYSTL</a>
+                </span>
+            </p>
+        </div>
+        <div style="margin-top: 20px;">
+            <strong>Important Information</strong>
+            <ul>
+                <li style="margin-bottom: 5px;">
+                    Your <i>Tuition Contract</i> and the <i>School Meals Form</i> must have <strong>Original Signatures </strong> and may only be <strong>Hand Delivered</strong> or <strong>Mailed </strong>to the school. <span>Faxed, Scanned, or Copied Forms will NOT be accepted!</span>
+                </li>
+                <li>
+                    Other completed forms may be submitted by any of the following methods:
+                </li>
+            </ul>
+            <p>
+                <strong>Hand Deliver</strong><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Bnos Menachem</span><br>
+                <a href="https://www.google.com/maps/@40.662364,-73.937956,3a,90y,346h,90t/data=!3m4!1e1!3m2!1sCQum589UgP7kNU5RAnFjxA!2e0!6m1!1e1" target="_blank">
+                    <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">739 E. New York Ave</span><br>
+                    <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Brooklyn NY 11203</span>
+                </a><br>
+                Cross streets:<br>
+                Albany and Troy Avenues
+            </p>
+            <p>
+                <strong>Email or Fax</strong><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Email: <a href="mailto:registration@bnosmenachem.org" target="_blank">registration@bnosmenachem.org</a></span>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    Fax: (718) 493-4836
+                </span>
+            </p>
+        </div>
+        <div style="margin-top: 20px;">
+            <p>
+                <strong>Contact Us</strong><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">
+                    P (718) 493-1100
+                </span><br>
+                <span style="overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">E <a href="mailto:office@bnosmenachem.org" target="_blank">office@bnosmenachem.org</a></span>
+            </p>
+        </div>
+    </div>
+			</div>
+			
+			
+			
+			
+			<!--All main-panel content in the following div -->
+			<div class="col s12 m12 l7 page">
+			
+			<div class="tab-content">
+                    <!--ko compose: { view: 'application/step1', preserveContext: true } --><div class="tab-pane fade in" data-bind="tabPage: { group: 'main', key: 'step1' }" style="padding-top: 25px;" data-view="views/application/step1" data-active-view="true">
+    <h5>
+        The initial application process for <strong>new students</strong> is not active. You may continue to the registration tab... <br><br>
+        To add or remove students in the registration area you must call the school directly.
+    </h5>
+    <div>
+        Printable Form: <a href="http://bnosmenachem.org/wp-content/uploads/2013/04/Pre-Registration.pdf" target="_blank">New Student Application</a>
+    </div>
+</div><!--/ko-->
+
+                    <!--ko if: $parent.page()==2-->
+                        <!--ko compose: { view: 'application/step2', preserveContext: true } --><div class="fade in" style="padding-top: 25px;" data-view="views/application/step2" data-active-view="true">
+    <form class=" form-horizontal" role="form">
+        <div style="width: 375px; min-width: 375px; margin: 0 auto">
+            <p>
+                <button type="button" class="btn btn-primary btn-lg" data-bind="click: $root.save.bind($root), css: { disabled: $root.isInCallback }">Save for later</button>
+                <button type="button" class="btn btn-danger btn-lg" data-bind="click: $root.submit.bind($root), css: { disabled: $root.isInCallback }">Submit Registration</button>
+            </p>
+        </div>
+        <div>
+            <div class="bs-example">
+                <div class="panel panel-default">
+                    <div class="panel-heading clearfix">
+                        <h4>
+                            Parent Info: <br>
+                            <small style="color: #dd4b39;">
+                                <strong>IMPORTANT - </strong> Don't leave fields blank; enter "N/A" if not applicable.
+                            </small>
+                        </h4>
+                    </div>
+                    <div class="panel-body">
+                        <div class="clearfix">
+                            <h3 style="margin-bottom: 0px !important; border-bottom: 1px solid #ddd; color: #428bca; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif; ">Mother: <span data-bind="text: mother().fullName()">Rashi Kaplan</span></h3>
+                            <!--ko compose: { view: 'views/application/parent', model: mother, preserveContext: true } --><div data-view="views/application/parent" data-active-view="true">
+    <form class="form-inline" role="form">
+        <div class="clearfix" style="background-color: #f1f1f1; padding: 5px; ">
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Salutation</label>
+                    <input type="text" data-bind="value: salutation" class="form-control" id="inputSalutation" placeholder="Salutation">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">First Name</label>
+                    <input type="text" data-bind="value: firstName" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Last Name</label>
+                    <input type="text" data-bind="value: lastName" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Hebrew Name</label>
+                    <input type="text" data-bind="keyboard: true, value: nameHebrew" dir="rtl" class="form-control has-heb-keyboard" id="inputnameHebrew" placeholder="Hebrew Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Phone</label>
+                    <input type="text" data-bind="value: phoneHome" class="form-control" id="inputHome" placeholder="Phone">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Cell</label>
+                    <input type="text" data-bind="value: phoneMobile" class="form-control" id="inputCell" placeholder="Cell">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Address</label>
+                    <input type="text" data-bind="value: address1" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">City</label>
+                    <input type="text" data-bind="value: city" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">State</label>
+                    <input type="text" data-bind="value: state" class="form-control" id="inputState" placeholder="State">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Zip</label>
+                    <input type="text" data-bind="value: postCode" class="form-control" id="inputpostCode" placeholder="Zip">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Email</label>
+                    <input type="text" data-bind="value: email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Occupation</label>
+                    <input type="text" data-bind="value: occupation" class="form-control" id="inputOccupation" placeholder="Occupation">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Employer</label>
+                    <input type="text" data-bind="value: employersName" class="form-control" id="inputemployersName" placeholder="Employer's Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label for="inputphoneWork" class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Work Phone</label>
+                    <input type="text" data-bind="value: phoneWork" class="form-control" id="inputphoneWork" placeholder="Work Phone">
+                </div>
+            </div>
+        </div>
+    </form>
+</div><!--/ko-->
+                        </div>
+                        <div class="clearfix">
+                            <h3 style="margin-bottom: 0px !important; border-bottom: 1px solid #ddd; color: #428bca; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif; ">Father: <span data-bind="text: father().fullName()">Nechemiah Kaplan</span></h3>
+                            <!--ko compose: { view: 'views/application/parent', model: father, preserveContext: true } --><div data-view="views/application/parent" data-active-view="true">
+    <form class="form-inline" role="form">
+        <div class="clearfix" style="background-color: #f1f1f1; padding: 5px; ">
+            <div class="form-group col-sm-12 col-md-12 col-lg-12">
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Salutation</label>
+                    <input type="text" data-bind="value: salutation" class="form-control" id="inputSalutation" placeholder="Salutation">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">First Name</label>
+                    <input type="text" data-bind="value: firstName" class="form-control" id="inputFirstName" placeholder="First Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Last Name</label>
+                    <input type="text" data-bind="value: lastName" class="form-control" id="inputLastName" placeholder="Last Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Hebrew Name</label>
+                    <input type="text" data-bind="keyboard: true, value: nameHebrew" dir="rtl" class="form-control has-heb-keyboard" id="inputnameHebrew" placeholder="Hebrew Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Phone</label>
+                    <input type="text" data-bind="value: phoneHome" class="form-control" id="inputHome" placeholder="Phone">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Cell</label>
+                    <input type="text" data-bind="value: phoneMobile" class="form-control" id="inputCell" placeholder="Cell">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Address</label>
+                    <input type="text" data-bind="value: address1" class="form-control" id="inputAddress" placeholder="Address">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">City</label>
+                    <input type="text" data-bind="value: city" class="form-control" id="inputCity" placeholder="City">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">State</label>
+                    <input type="text" data-bind="value: state" class="form-control" id="inputState" placeholder="State">
+                </div>
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Zip</label>
+                    <input type="text" data-bind="value: postCode" class="form-control" id="inputpostCode" placeholder="Zip">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Email</label>
+                    <input type="text" data-bind="value: email" class="form-control" id="inputEmail" placeholder="Email">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Occupation</label>
+                    <input type="text" data-bind="value: occupation" class="form-control" id="inputOccupation" placeholder="Occupation">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Employer</label>
+                    <input type="text" data-bind="value: employersName" class="form-control" id="inputemployersName" placeholder="Employer's Name">
+                </div>
+
+                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                    <label for="inputphoneWork" class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Work Phone</label>
+                    <input type="text" data-bind="value: phoneWork" class="form-control" id="inputphoneWork" placeholder="Work Phone">
+                </div>
+            </div>
+        </div>
+    </form>
+</div><!--/ko-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <!--ko compose: { view: 'application/student', preserveContext: true } --><div data-view="views/application/student" data-active-view="true">
+    <!-- Children Attending This School -->
+    <div class="bs-example">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <!--<div class="pull-left" style="margin-right: 15px;"><button class="btn btn-primary" data-bind="click: $parent.addStudent">+ student</button></div>-->
+                <h4>Children <strong>Attending</strong> Bnos Menachem <br>
+                    <small style="color: #dd4b39;">
+                        <strong>IMPORTANT - </strong> Don't leave fields blank; enter "N/A" if not applicable.
+                    </small>
+                </h4>
+            </div>
+            <div class="panel-body">
+                <div data-bind="foreach: students">
+                    <div style="margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; border-bottom: 1px solid #dadada;">
+                        <div class="media clearfix" style="">
+                            <div class="clearfix">
+                                <div class="clearfix pull-left" style="margin: 0px 10px 0px 0px; padding: 0px 10px 0px 0px; border-right: 1px solid #dadada;">
+                                    <div style="margin: 0px 0px 5px 0px;">
+                                        <button type="button" class="btn btn-primary" data-bind="click: $root.uploadPhoto">Upload Photo</button>
+                                    </div>
+                                    <div style="text-align: right; cursor: pointer;">
+                                        <span data-bind="click: $root.clearPhoto">clear photo</span>
+                                    </div>
+                                </div>
+                                <div class="pull-left" style="margin: 0px 20px 0px 0px; ">
+                                    <!--ko if: imageMedUrl-->
+                                    <img class="media-object" data-bind="attr: { src: imageMedUrl }" style="border-radius:50%" src="http://res.cloudinary.com/cleverbees/image/upload/c_fill,g_face:center,h_300,q_100,w_300/c_scale,h_64,r_0,w_64/v1431110781/Member%20Images/aywqscodwkfmy95sr4v7.jpg">
+                                    <!--/ko-->
+                                    <!--ko ifnot: imageMedUrl--><!--/ko-->
+                                </div>
+                                <div class="pull-left media-heading" style="line-height: 70px; font-size: 24px; color: #aaadb4; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif; ">
+                                    <a data-bind="text: $data.fullName, click: $root.showModal.bind($root, $data, 'views/application/modal/student')" href="#" style="font-size: 24px; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif;">Sara Kaplan</a>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="clearfix" style="background-color: #f1f1f1; padding: 10px;">
+                                    <form class="form-inline" role="form">
+                                        <div class="clearfix" style="">
+                                            <div class="form-group col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;">
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">First Name</label>
+                                                    <input type="text" data-bind="value: firstName" class="form-control" id="inputFirstName" placeholder="First Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Middle Name</label>
+                                                    <input type="text" data-bind="value: middleName" class="form-control" id="inputMiddle Name" placeholder="Middle Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Last Name</label>
+                                                    <input type="text" data-bind="value: lastName" class="form-control" id="inputLastName" placeholder="Last Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Hebrew Name</label>
+                                                    <input type="text" data-bind="keyboard: true, value: nameHebrew" dir="rtl" class="form-control has-heb-keyboard" id="inputnameHebrew" placeholder="Hebrew Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Birthday</label>
+                                                    <input type="text" data-bind="value: dobString, mask: '00/00/0000'" class="form-control" id="inputdOB" placeholder="mm/dd/yyyy" style="height: 26px;" maxlength="10" autocomplete="off">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Grade Entering</label>
+                                                    <input type="text" data-bind="value: gradeLevel" class="form-control" id="inputgrade" placeholder="Grade Entering" style="height: 26px;">
+                                                    <div style="display: none;">
+                                                        <span class="title" style="white-space: nowrap; overflow: hidden;">Grade Entering</span>
+                                                        <select class="browser-default" ng-model="m.gradeLevel" id="inputGradeLevel" style="font-weight: 300; box-sizing: border-box; border-bottom: 1px solid #9e9e9e;">
+                                                            <option value="" disabled="" selected="">Grade Entering</option>
+                                                            <option value="Pre Nursery">Pre Nursery</option>
+                                                            <option value="Nursery">Nursery</option>
+                                                            <option value="Kindergarten">Kindergarten</option>
+                                                            <option value="Pre-1A">Pre-1A</option>
+                                                            <option value="1">1st grade</option>
+                                                            <option value="2">2nd grade</option>
+                                                            <option value="3">3rd grade</option>
+                                                            <option value="4">4th grade</option>
+                                                            <option value="5">5th grade</option>
+                                                            <option value="6">6th grade</option>
+                                                            <option value="7">7th grade</option>
+                                                            <option value="8">8th grade</option>
+                                                            <option value="9">9th grade</option>
+                                                            <option value="10">10th grade</option>
+                                                            <option value="11">11th grade</option>
+                                                            <option value="12">12th grade</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">S.S. #</label>
+                                                    <input type="text" data-bind="value: sSN" class="form-control" id="inputsSN" placeholder="Social Security #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">FS/ACD #</label>
+                                                    <input type="text" data-bind="value: financialAidNumber" class="form-control" id="inputfinancialAidNumber" placeholder="FS/ACD #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Insurance Id</label>
+                                                    <input type="text" data-bind="value: healthInsuranceId" class="form-control" id="inputhealthInsuranceId" placeholder="Health Insurance" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Allergies</label>
+                                                    <input type="text" data-bind="value: allergies" class="form-control" id="inputallergies" placeholder="Allergies / Notes" style="height: 26px;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Legal guardian?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="1" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="2" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="3" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="4" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Responsible for tuition?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="1" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="2" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="3" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="4" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Lives with?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="1" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="2" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="3" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="4" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Bus Service?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="1" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Morning
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="2" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Afternoon
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="3" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private FULL
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="4" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        NY City (Jofaz)
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="5" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Not Required
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div style="margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; border-bottom: 1px solid #dadada;">
+                        <div class="media clearfix" style="">
+                            <div class="clearfix">
+                                <div class="clearfix pull-left" style="margin: 0px 10px 0px 0px; padding: 0px 10px 0px 0px; border-right: 1px solid #dadada;">
+                                    <div style="margin: 0px 0px 5px 0px;">
+                                        <button type="button" class="btn btn-primary" data-bind="click: $root.uploadPhoto">Upload Photo</button>
+                                    </div>
+                                    <div style="text-align: right; cursor: pointer;">
+                                        <span data-bind="click: $root.clearPhoto">clear photo</span>
+                                    </div>
+                                </div>
+                                <div class="pull-left" style="margin: 0px 20px 0px 0px; ">
+                                    <!--ko if: imageMedUrl-->
+                                    <img class="media-object" data-bind="attr: { src: imageMedUrl }" style="border-radius:50%" src="http://res.cloudinary.com/cleverbees/image/upload/c_fill,g_face:center,h_300,q_100,w_300/c_scale,h_64,r_0,w_64/v1431110804/Member%20Images/t04qvavigip8vjzcu3nw.jpg">
+                                    <!--/ko-->
+                                    <!--ko ifnot: imageMedUrl--><!--/ko-->
+                                </div>
+                                <div class="pull-left media-heading" style="line-height: 70px; font-size: 24px; color: #aaadb4; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif; ">
+                                    <a data-bind="text: $data.fullName, click: $root.showModal.bind($root, $data, 'views/application/modal/student')" href="#" style="font-size: 24px; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif;">Rivka Kaplan</a>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="clearfix" style="background-color: #f1f1f1; padding: 10px;">
+                                    <form class="form-inline" role="form">
+                                        <div class="clearfix" style="">
+                                            <div class="form-group col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;">
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">First Name</label>
+                                                    <input type="text" data-bind="value: firstName" class="form-control" id="inputFirstName" placeholder="First Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Middle Name</label>
+                                                    <input type="text" data-bind="value: middleName" class="form-control" id="inputMiddle Name" placeholder="Middle Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Last Name</label>
+                                                    <input type="text" data-bind="value: lastName" class="form-control" id="inputLastName" placeholder="Last Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Hebrew Name</label>
+                                                    <input type="text" data-bind="keyboard: true, value: nameHebrew" dir="rtl" class="form-control has-heb-keyboard" id="inputnameHebrew" placeholder="Hebrew Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Birthday</label>
+                                                    <input type="text" data-bind="value: dobString, mask: '00/00/0000'" class="form-control" id="inputdOB" placeholder="mm/dd/yyyy" style="height: 26px;" maxlength="10" autocomplete="off">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Grade Entering</label>
+                                                    <input type="text" data-bind="value: gradeLevel" class="form-control" id="inputgrade" placeholder="Grade Entering" style="height: 26px;">
+                                                    <div style="display: none;">
+                                                        <span class="title" style="white-space: nowrap; overflow: hidden;">Grade Entering</span>
+                                                        <select class="browser-default" ng-model="m.gradeLevel" id="inputGradeLevel" style="font-weight: 300; box-sizing: border-box; border-bottom: 1px solid #9e9e9e;">
+                                                            <option value="" disabled="" selected="">Grade Entering</option>
+                                                            <option value="Pre Nursery">Pre Nursery</option>
+                                                            <option value="Nursery">Nursery</option>
+                                                            <option value="Kindergarten">Kindergarten</option>
+                                                            <option value="Pre-1A">Pre-1A</option>
+                                                            <option value="1">1st grade</option>
+                                                            <option value="2">2nd grade</option>
+                                                            <option value="3">3rd grade</option>
+                                                            <option value="4">4th grade</option>
+                                                            <option value="5">5th grade</option>
+                                                            <option value="6">6th grade</option>
+                                                            <option value="7">7th grade</option>
+                                                            <option value="8">8th grade</option>
+                                                            <option value="9">9th grade</option>
+                                                            <option value="10">10th grade</option>
+                                                            <option value="11">11th grade</option>
+                                                            <option value="12">12th grade</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">S.S. #</label>
+                                                    <input type="text" data-bind="value: sSN" class="form-control" id="inputsSN" placeholder="Social Security #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">FS/ACD #</label>
+                                                    <input type="text" data-bind="value: financialAidNumber" class="form-control" id="inputfinancialAidNumber" placeholder="FS/ACD #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Insurance Id</label>
+                                                    <input type="text" data-bind="value: healthInsuranceId" class="form-control" id="inputhealthInsuranceId" placeholder="Health Insurance" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Allergies</label>
+                                                    <input type="text" data-bind="value: allergies" class="form-control" id="inputallergies" placeholder="Allergies / Notes" style="height: 26px;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Legal guardian?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="1" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="2" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="3" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="4" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Responsible for tuition?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="1" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="2" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="3" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="4" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Lives with?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="1" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="2" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="3" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="4" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Bus Service?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="1" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Morning
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="2" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Afternoon
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="3" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private FULL
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="4" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        NY City (Jofaz)
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="5" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Not Required
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div style="margin: 0px 0px 10px 0px; padding: 0px 0px 10px 0px; border-bottom: 1px solid #dadada;">
+                        <div class="media clearfix" style="">
+                            <div class="clearfix">
+                                <div class="clearfix pull-left" style="margin: 0px 10px 0px 0px; padding: 0px 10px 0px 0px; border-right: 1px solid #dadada;">
+                                    <div style="margin: 0px 0px 5px 0px;">
+                                        <button type="button" class="btn btn-primary" data-bind="click: $root.uploadPhoto">Upload Photo</button>
+                                    </div>
+                                    <div style="text-align: right; cursor: pointer;">
+                                        <span data-bind="click: $root.clearPhoto">clear photo</span>
+                                    </div>
+                                </div>
+                                <div class="pull-left" style="margin: 0px 20px 0px 0px; ">
+                                    <!--ko if: imageMedUrl-->
+                                    <img class="media-object" data-bind="attr: { src: imageMedUrl }" style="border-radius:50%" src="http://res.cloudinary.com/cleverbees/image/upload/c_fill,g_face:center,h_300,q_100,w_300/c_scale,h_64,r_0,w_64/v1431110820/Member%20Images/q4erc7f02w4jopahwgis.jpg">
+                                    <!--/ko-->
+                                    <!--ko ifnot: imageMedUrl--><!--/ko-->
+                                </div>
+                                <div class="pull-left media-heading" style="line-height: 70px; font-size: 24px; color: #aaadb4; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif; ">
+                                    <a data-bind="text: $data.fullName, click: $root.showModal.bind($root, $data, 'views/application/modal/student')" href="#" style="font-size: 24px; font-family: 'Open Sans Condensed',Helvetica,Arial,sans-serif;">Tzipporah Kaplan</a>
+                                </div>
+                            </div>
+                            <div class="media-body">
+                                <div class="clearfix" style="background-color: #f1f1f1; padding: 10px;">
+                                    <form class="form-inline" role="form">
+                                        <div class="clearfix" style="">
+                                            <div class="form-group col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;">
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">First Name</label>
+                                                    <input type="text" data-bind="value: firstName" class="form-control" id="inputFirstName" placeholder="First Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Middle Name</label>
+                                                    <input type="text" data-bind="value: middleName" class="form-control" id="inputMiddle Name" placeholder="Middle Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Last Name</label>
+                                                    <input type="text" data-bind="value: lastName" class="form-control" id="inputLastName" placeholder="Last Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Hebrew Name</label>
+                                                    <input type="text" data-bind="keyboard: true, value: nameHebrew" dir="rtl" class="form-control has-heb-keyboard" id="inputnameHebrew" placeholder="Hebrew Name" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Birthday</label>
+                                                    <input type="text" data-bind="value: dobString, mask: '00/00/0000'" class="form-control" id="inputdOB" placeholder="mm/dd/yyyy" style="height: 26px;" maxlength="10" autocomplete="off">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Grade Entering</label>
+                                                    <input type="text" data-bind="value: gradeLevel" class="form-control" id="inputgrade" placeholder="Grade Entering" style="height: 26px;">
+                                                    <div style="display: none;">
+                                                        <span class="title" style="white-space: nowrap; overflow: hidden;">Grade Entering</span>
+                                                        <select class="browser-default" ng-model="m.gradeLevel" id="inputGradeLevel" style="font-weight: 300; box-sizing: border-box; border-bottom: 1px solid #9e9e9e;">
+                                                            <option value="" disabled="" selected="">Grade Entering</option>
+                                                            <option value="Pre Nursery">Pre Nursery</option>
+                                                            <option value="Nursery">Nursery</option>
+                                                            <option value="Kindergarten">Kindergarten</option>
+                                                            <option value="Pre-1A">Pre-1A</option>
+                                                            <option value="1">1st grade</option>
+                                                            <option value="2">2nd grade</option>
+                                                            <option value="3">3rd grade</option>
+                                                            <option value="4">4th grade</option>
+                                                            <option value="5">5th grade</option>
+                                                            <option value="6">6th grade</option>
+                                                            <option value="7">7th grade</option>
+                                                            <option value="8">8th grade</option>
+                                                            <option value="9">9th grade</option>
+                                                            <option value="10">10th grade</option>
+                                                            <option value="11">11th grade</option>
+                                                            <option value="12">12th grade</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">S.S. #</label>
+                                                    <input type="text" data-bind="value: sSN" class="form-control" id="inputsSN" placeholder="Social Security #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">FS/ACD #</label>
+                                                    <input type="text" data-bind="value: financialAidNumber" class="form-control" id="inputfinancialAidNumber" placeholder="FS/ACD #" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Insurance Id</label>
+                                                    <input type="text" data-bind="value: healthInsuranceId" class="form-control" id="inputhealthInsuranceId" placeholder="Health Insurance" style="height: 26px;">
+                                                </div>
+
+                                                <div class="col-sm-3 col-md-2 col-lg-2" style="padding: 3px 3px 0px 3px !important;">
+                                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Allergies</label>
+                                                    <input type="text" data-bind="value: allergies" class="form-control" id="inputallergies" placeholder="Allergies / Notes" style="height: 26px;">
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Legal guardian?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="1" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="2" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="3" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="guardian" type="radio" value="4" data-bind="checked: legalGuardian" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Responsible for tuition?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="1" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="2" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="3" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="responsibleTuition" type="radio" value="4" data-bind="checked: paysTuition" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Lives with?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="1" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Both Parents
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="2" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Mother
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="3" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Father
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-3 col-lg-3" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="livesWith" type="radio" value="4" data-bind="checked: livesWith" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Other
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix" style="margin: 10px 0px 0px 0px; padding: 10px; border-left: 3px solid #39b2ee; background-color: #fff;">
+                                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 clearfix">
+                                                <label class=" col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important;">
+                                                    Bus Service?
+                                                </label>
+                                                <div class="radio form-group col-xs-12 col-sm-12 col-md-12 col-lg-12" style="margin: 0px 0px 0px 0px !important; padding: 3px 0px 3px 0px !important;">
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="1" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Morning
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="2" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private Afternoon
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="3" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Private FULL
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="4" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        NY City (Jofaz)
+                                                    </label>
+                                                    <label class="col-xs-12 col-sm-12 col-md-6 col-lg-6" style="padding: 0px 5px 0px 5px !important;">
+                                                        <input name="busService" type="radio" value="5" data-bind="checked: busService" class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                                        Not Required
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><!--/ko-->
+        </div>
+
+        <div>
+            <!--ko compose: { view: 'application/child', preserveContext: true } --><div data-view="views/application/child" data-active-view="true">
+    <!-- Other Children - Not Attending Same School -->
+    <div class="bs-example">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <div class="pull-left" style="margin-right: 15px;"><button class="btn btn-primary" data-bind="click: $parent.addChild">+ child</button></div>
+                <div class="pull-left" style="line-height: 34px; font-size: 16px;">Children <b>Not Attending</b> Bnos Menachem</div>
+            </div>
+            <div class="panel-body">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>School</th>
+                            <th>Grade Entering</th>
+                            <th>&nbsp;</th>
+                        </tr>
+                    </thead>
+                    <tbody data-bind="foreach: otherChildren">
+                        <tr>
+                            <td data-bind="text: $index() + 1">1</td>
+                            <td><a data-bind="text: $data.fullName, click: $root.showModal.bind($root, $data, 'views/application/modal/child')" href="#">Aryeh Kaplan</a></td>
+                            <td data-bind="text: $data.schoolAttending">Cheder Chabad of Monsey</td>
+                            <td data-bind="text: $data.gradeLevel">6</td>
+                            <td><a data-bind="click: $root.deleteChild" href="#">delete</a></td>
+                        </tr>
+                    
+                        <tr>
+                            <td data-bind="text: $index() + 1">2</td>
+                            <td><a data-bind="text: $data.fullName, click: $root.showModal.bind($root, $data, 'views/application/modal/child')" href="#">Yekusiel Kaplan</a></td>
+                            <td data-bind="text: $data.schoolAttending">Cincinnati</td>
+                            <td data-bind="text: $data.gradeLevel">11</td>
+                            <td><a data-bind="click: $root.deleteChild" href="#">delete</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+         </div>
+    </div>
+</div><!--/ko-->
+        </div>
+
+        <div>
+            <!--ko compose: { view: 'application/moreInfo', preserveContext: true } --><div data-view="views/application/moreInfo" data-active-view="true">
+    <!-- Additional Family Info -->
+    <div class="bs-example">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <div class="pull-left" style="line-height: 34px; font-size: 16px;">Additional Family Info</div>
+            </div>
+            <div class="panel-body">
+                <div>
+                    <form class="form-inline" role="form">
+                        <div class="clearfix" style="">
+                            <div class="form-group col-sm-12 col-md-12 col-lg-12" style="margin-bottom: 0px !important;">
+                                <div class="col-sm-4 col-md-4 col-lg-4" style="padding: 3px 3px 0px 3px !important;">
+                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Doctor Name</label>
+                                    <input type="text" data-bind="value: familyDoctorName" class="form-control" id="inputfamilyDoctorName" placeholder="Doctor Name">
+                                </div>
+
+                                <div class="col-sm-4 col-md-4 col-lg-4" style="padding: 3px 3px 0px 3px !important;">
+                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Doctor Phone</label>
+                                    <input type="text" data-bind="value: familyDoctorPhone" class="form-control" id="inputfamilyDoctorPhone" placeholder="Doctor Phone">
+                                </div>
+
+                                <div class="col-sm-4 col-md-4 col-lg-4" style="padding: 3px 3px 0px 3px !important;">
+                                    <label class="pull-left" style="width: 100px; margin-bottom: 0px !important; padding: 3px 3px 0px 3px !important; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;">Doctor Address</label>
+                                    <input type="text" data-bind="value: familyDoctorAddress" class="form-control" id="inputfamilyDoctorAddress" placeholder="Doctor Address">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Emergency Contacts -->
+    <div class="bs-example">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <!-- <div class="pull-left" style="margin-right: 15px;"><button class="btn btn-primary" data-bind="click: $parent.addStudent">+ emergency contact</button></div> -->
+                <div class="pull-left" style="line-height: 34px; font-size: 16px;">Emergency Contacts</div>
+            </div>
+            <div class="panel-body">
+            </div>
+            <div class="table-responsive">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th style="min-width: 25px;">#</th>
+                            <th style="min-width: 125px;">Name</th>
+                            <th style="min-width: 125px;">Relationship</th>
+                            <th style="min-width: 125px;">Phone</th>
+                            <th style="min-width: 125px;">Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="line-height: 34px;">1</td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCName" data-bind="value: $data.eCName1" placeholder="Full Name">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCRelationship" data-bind="value: $data.eCRelationship1" placeholder="Relationship">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCPhone" data-bind="value: $data.eCPhone1" placeholder="Phone">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCEmail" data-bind="value: $data.eCEmail1" placeholder="Email">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">2</td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCName" data-bind="value: $data.eCName2" placeholder="Full Name">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCRelationship" data-bind="value: $data.eCRelationship2" placeholder="Relationship">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCPhone" data-bind="value: $data.eCPhone2" placeholder="Phone">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCEmail" data-bind="value: $data.eCEmail2" placeholder="Email">
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="line-height: 34px;">3</td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCName" data-bind="value: $data.eCName3" placeholder="Full Name">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCRelationship" data-bind="value: $data.eCRelationship3" placeholder="Relationship">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCPhone" data-bind="value: $data.eCPhone3" placeholder="Phone">
+                                </div>
+                            </td>
+                            <td>
+                                <div>
+                                    <input type="text" class="form-control" id="inputeCEmail" data-bind="value: $data.eCEmail3" placeholder="Email">
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Registration Info
+    <div class="bs-example">
+        <div class="panel panel-default">
+            <div class="panel-heading clearfix">
+                <div class="pull-left" style="line-height: 34px; font-size: 16px;">Additional Registration Info</div>
+            </div>
+            <div class="panel-body">
+                <p></p>
+                <div>
+                    
+                </div>
+            </div>
+        </div>
+    </div> -->
+</div><!--/ko-->
+        </div>
+        <div style="width: 375px; min-width: 375px; margin: 0 auto">
+            <p>
+                <button type="button" class="btn btn-primary btn-lg" data-bind="click: $root.save.bind($root), css: { disabled: $root.isInCallback }">Save for later</button>
+                <button type="button" class="btn btn-danger btn-lg" data-bind="click: $root.submit.bind($root), css: { disabled: $root.isInCallback }">Submit Registration</button>
+            </p>
+        </div>
+    </form>
+</div><!--/ko-->
+                    <!--/ko-->
+
+                    <!--ko if: $parent.page()==3--><!--/ko-->
+
+                    <!--ko if: $parent.page()==4--><!--/ko-->
+
+                </div>
+				</div>
+		</div>
+
+	</div>
+ 
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/bin/materialize.js"></script>
+  <script src="js/bin/init.js"></script>
+
+  </body>
+</html>
