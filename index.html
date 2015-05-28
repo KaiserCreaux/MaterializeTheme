@@ -19,30 +19,32 @@ b7ff5e spring green
 
 
 <body>
-	<div class="container">
+	<div class="">
 		<ul class="breadcrumb">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Bnos Menachem</a></li>
 			<li><a href="#">Registration</a></li>
 		</ul>
-		<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><i class="mdi-navigation-menu"></i></a>
-	</div>
-	<ul id="nav-mobile" class="side-nav" style="width: 240px;">
-		<li>
-			<ul><!-- Menubar Top, consistent between pages. -->
-				<li><a id="logo-container" href="http://materializecss.com/" class="brand-logo">CleverBees</a></li>
-				<li id="menuHives" class=""><a href="about.html" class="waves-effect waves-teal">Your Hives</a></li>
-				<li id="menuMessage" class=""><a href="getting-started.html" class="waves-effect waves-teal">Message</a></li>
-				<li id="menuAdmin" class=""><a href="getting-started.html" class="waves-effect waves-teal">Admin</a></li>
-			</ul>
-			<ul id="menuHolder"><!--Menubar middle, specific to location in site -->
-				<li><a class="waves-effect waves-teal">Buzz</a></li>
-				<li><a class="waves-effect waves-teal">Bees</a></li>
-				<li><a class="waves-effect waves-teal">Grades</a></li>
-			</ul>
-		</li>
-	</ul>
 
+	</div>
+	<div>
+		<a href="#" data-activates="nav-mobile" class="button-collapse top-nav waves-effect waves-light circle"><div class="menuCircle"><!--<i class="mdi-navigation-menu"></i>-->Menu</div></a>
+		<ul id="nav-mobile" class="side-nav" style="width: 240px;">
+			<li>
+				<ul><!-- Menubar Top, consistent between pages. -->
+					<li><a id="logo-container" href="http://materializecss.com/" class="brand-logo">CleverBees</a></li>
+					<li id="menuHives" class=""><a href="about.html" class="waves-effect waves-teal">Your Hives</a></li>
+					<li id="menuMessage" class=""><a href="getting-started.html" class="waves-effect waves-teal">Message</a></li>
+					<li id="menuAdmin" class=""><a href="getting-started.html" class="waves-effect waves-teal">Admin</a></li>
+				</ul>
+				<ul id="menuHolder"><!--Menubar middle, specific to location in site -->
+					<li><a class="waves-effect waves-teal">Buzz</a></li>
+					<li><a class="waves-effect waves-teal">Bees</a></li>
+					<li><a class="waves-effect waves-teal">Grades</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 
 	<div class="container content">
 		<div class="row">
@@ -51,7 +53,7 @@ b7ff5e spring green
 				<div class="col-sm-4 col-md-3 sidebar sidebar-offcanvas" id="sidebar">
         <div>
             <h1 id="logo">
-                <a href="/"><img src="logo.png" alt="Bnos Menachem" title="Bnos Menachem"></a>
+                <a href="/"><img class="schoolLogo" src="logo.png" alt="Bnos Menachem" title="Bnos Menachem"></a>
             </h1>
         </div>
         <!--
@@ -120,14 +122,8 @@ b7ff5e spring green
 			
 			
 			<!--All main-panel content in the following div -->
-			<div class="col s12 m12 l7 page">
-			
-			<div class="tab-content">
-                    <!--ko compose: { view: 'application/step1', preserveContext: true } --><div class="tab-pane fade in" data-bind="tabPage: { group: 'main', key: 'step1' }" style="padding-top: 25px;" data-view="views/application/step1" data-active-view="true">
-    <h5>
-        The initial application process for <strong>new students</strong> is not active. You may continue to the registration tab... <br><br>
-        To add or remove students in the registration area you must call the school directly.
-    </h5>
+			<div class="col s12 m12 l7 page tab-content">
+<div class="tab-pane fade in" data-bind="tabPage: { group: 'main', key: 'step1' }" style="padding-top: 25px;" data-view="views/application/step1" data-active-view="true">
     <div>
         Printable Form: <a href="http://bnosmenachem.org/wp-content/uploads/2013/04/Pre-Registration.pdf" target="_blank">New Student Application</a>
     </div>
@@ -1176,7 +1172,6 @@ b7ff5e spring green
 
                     <!--ko if: $parent.page()==4--><!--/ko-->
 
-                </div>
 				</div>
 		</div>
 

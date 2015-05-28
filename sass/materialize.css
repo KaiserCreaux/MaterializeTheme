@@ -8010,11 +8010,27 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
 @media (min-height: 40.125em) {
   .picker--time .picker__box {
     margin-bottom: 5em; } }
+body {
+  background-color: #E8F5E9; }
+
+.menuCircle {
+  border: 3px solid #ffa000;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+  text-align: center;
+  left: 0%; }
+
 .side-nav {
-  background-color: #81C784; }
+  background-color: #81C784;
+  margin-top: 75px; }
 
 .sidebar {
   background-color: #E8F5E9; }
+
+.tab-content {
+  background-color: white; }
 
 .breadcrumb {
   list-style: none;
@@ -8055,7 +8071,7 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   height: 0;
   border-top: 50px solid transparent;
   border-bottom: 50px solid transparent;
-  border-left: 30px solid white;
+  border-left: 30px solid transparent;
   position: absolute;
   top: 50%;
   margin-top: -50px;
@@ -8076,13 +8092,13 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   background: #aeea00; }
 
 .breadcrumb li:nth-child(3) a:after {
-  border-left-color: white; }
+  border-left-color: transparent; }
 
 .breadcrumb li:nth-child(4) a {
-  background: white; }
+  background: transparent; }
 
 .breadcrumb li:nth-child(4) a:after {
-  border-left-color: white; }
+  border-left-color: transparent; }
 
 .breadcrumb li:nth-child(5) a {
   background: #f5c689; }

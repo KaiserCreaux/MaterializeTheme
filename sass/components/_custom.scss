@@ -1,9 +1,29 @@
+body {
+	background-color: color("green", "lighten-5");
+}
+
+.menuCircle{
+	border: 3px solid color("amber", "darken-2");
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	line-height: 50px;
+	text-align: center;
+	left: 0%
+}
+	
+
 .side-nav {
 	background-color: color("green", "lighten-2");
+	margin-top: 75px;
 }
 
 .sidebar {
 	background-color: color("green", "lighten-5");
+}
+
+.tab-content {
+	background-color: white;
 }
 
 .breadcrumb { 
@@ -46,7 +66,7 @@
 	height: 0;
 	border-top: 50px solid transparent;       
 	border-bottom: 50px solid transparent;
-	border-left: 30px solid white;
+	border-left: 30px solid rgba(0,0,0,0);
 	position: absolute;
 	top: 50%;
 	margin-top: -50px; 
@@ -61,9 +81,9 @@
 .breadcrumb li:nth-child(2) a       { background:        color("green", "lighten-2"); }
 .breadcrumb li:nth-child(2) a:after { border-left-color: color("green", "lighten-2");}
 .breadcrumb li:nth-child(3) a       { background:        color("lime", "accent-4"); }
-.breadcrumb li:nth-child(3) a:after { border-left-color: white; }
-.breadcrumb li:nth-child(4) a       { background:        white; }
-.breadcrumb li:nth-child(4) a:after { border-left-color: white; }
+.breadcrumb li:nth-child(3) a:after { border-left-color: rgba(0,0,0,0); }
+.breadcrumb li:nth-child(4) a       { background:        rgba(0,0,0,0); }
+.breadcrumb li:nth-child(4) a:after { border-left-color: rgba(0,0,0,0); }
 .breadcrumb li:nth-child(5) a       { background:        hsla(34,85%,75%,1); }
 .breadcrumb li:nth-child(5) a:after { border-left-color: hsla(34,85%,75%,1); }
 
